@@ -21,7 +21,6 @@ class File {
   }
 
   static async getFileContent(filePath) {
-    // const filename = join(__dirname, filePath);
     return (await readFile(filePath)).toString("utf-8");
   }
 
