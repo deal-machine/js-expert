@@ -1,7 +1,14 @@
-<h3>features and tests</h3>
+<h3 align="center">JS Expert</h3>
 <hr>
-<ul>    
-<li>the file should have id,name,profession and age fields</li>
-<li>the file should not be empty</li>
-<li>the file should not be longer than 5 lines including headers</li>
+<h3>Javascript Testing</h3>
+<ul>
+<li title="Tests">
+    Mocks
+</li>
+<li title="Tests">
+    Stubs
+</li>
+<li title="Tests">
+    Spies
+</li>
 </ul>
