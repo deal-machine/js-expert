@@ -11,4 +11,7 @@
 <li title="Tests">
     Spies
 </li>
+<li title="Tests">
+    End-to-end
+</li>
 </ul>
