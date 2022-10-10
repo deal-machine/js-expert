@@ -4,9 +4,9 @@
   "license": "ISC",
   "description": "",
   "scripts": {
-    "test": "npx mocha -w *.test.js",
-    "test:cov": "npx nyc npx mocha --parallel *.test.js",
-    "dev": "node app.js"
+    "test": "npx mocha -w **/*.test.js",
+    "test:cov": "npx nyc npx mocha --parallel **/*.test.js",
+    "dev": "node ./src/app.js"
   },
   "name": "coverage",
   "version": "1.0.0",
