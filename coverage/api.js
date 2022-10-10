@@ -23,7 +23,6 @@ const handler = function async(request, response) {
 
   return routeChosen(request, response);
 };
-const port = 3000;
 const app = http.createServer(handler);
 
 module.exports = app;
