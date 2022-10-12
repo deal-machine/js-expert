@@ -1,7 +1,7 @@
 import { IBase } from "./base";
 
 export interface ICar extends IBase {
-  releaseYear: string;
+  releaseYear: number;
   available: boolean;
   gasAvailable: boolean;
 }

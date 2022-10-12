@@ -1,0 +1,16 @@
+[
+  {
+    "id": 976,
+    "name": "Camry",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": 973,
+    "name": "Roadster",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  }
+]

@@ -2,7 +2,7 @@ import { Base } from "./base";
 import { ICar } from "./protocols";
 
 class Car extends Base {
-  releaseYear: string;
+  releaseYear: number;
   available: boolean;
   gasAvailable: boolean;
 
