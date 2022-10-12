@@ -1,9 +1,12 @@
 import { readFile } from "fs/promises";
-import { IBaseRepository } from "./protocols/baseRepository";
+import {
+  IBaseRepository,
+  IBaseRepositoryConstructor,
+} from "../protocols/baseRepository";
 
 class BaseRepository implements IBaseRepository {
   file: any;
-  constructor({ file }: IBaseRepository) {
+  constructor({ file }: IBaseRepositoryConstructor) {
     this.file = file;
   }
 
