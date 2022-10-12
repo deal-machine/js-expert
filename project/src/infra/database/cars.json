@@ -1,14 +1,14 @@
 [
   {
-    "id": 976,
-    "name": "Camry",
-    "releaseYear": 2022,
+    "id": 378,
+    "name": "Jetta",
+    "releaseYear": 2021,
     "available": true,
     "gasAvailable": true
   },
   {
-    "id": 973,
-    "name": "Roadster",
+    "id": 414,
+    "name": "Prius",
     "releaseYear": 2022,
     "available": true,
     "gasAvailable": true

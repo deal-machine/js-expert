@@ -3,17 +3,14 @@ import { join } from "path";
 import { writeFile } from "fs/promises";
 import { Car, Category, Customer } from "../../entities";
 
-const seedDatabase = join(__dirname, "../", "database");
-
+const cars: Car[] = [];
+const customers: Customer[] = [];
 const category = new Category({
   id: Number(faker.random.numeric(3)),
   name: faker.name.firstName(),
   carIds: [],
   price: Number(faker.finance.amount()),
 });
-
-const cars: Car[] = [];
-const customers: Customer[] = [];
 
 for (let index = 0; index < 2; index++) {
   const car = new Car({
@@ -35,14 +32,15 @@ for (let index = 0; index < 2; index++) {
   customers.push(customer);
 }
 
-const write = async ({
-  filename,
-  data,
-}: {
+interface IWriteFile {
   filename: string;
   data: any;
-}): Promise<any> =>
-  writeFile(join(seedDatabase, filename), JSON.stringify(data));
+}
+const write = async ({ filename, data }: IWriteFile): Promise<void> => {
+  const seedDatabase = join(__dirname, "../", "database");
+  const filePath = join(seedDatabase, filename);
+  await writeFile(filePath, JSON.stringify(data));
+};
 
 (async () => {
   await write({ filename: "cars.json", data: cars });
