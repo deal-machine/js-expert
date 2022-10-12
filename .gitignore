@@ -3,3 +3,4 @@
 **/package-lock.json
 e2e/.nyc_output
 e2e/coverage
+**/coverage
