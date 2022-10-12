@@ -1,16 +1,17 @@
 import { readFile } from "fs/promises";
 import {
+  FindParams,
   IBaseRepository,
   IBaseRepositoryConstructor,
 } from "../protocols/baseRepository";
 
 class BaseRepository implements IBaseRepository {
-  file: any;
+  file: string;
   constructor({ file }: IBaseRepositoryConstructor) {
     this.file = file;
   }
 
-  async find({ itemId }: { itemId?: number }) {
+  async find({ itemId }: FindParams) {
     const fileRead = (await readFile(this.file)).toString();
     const content = JSON.parse(fileRead);
 
