@@ -2,9 +2,11 @@ interface FindParams {
   itemId?: number;
 }
 
-export interface IBaseRepositoryConstructor {
-  file: any;
+interface IBaseRepositoryConstructor {
+  file: string;
 }
-export interface IBaseRepository {
+interface IBaseRepository {
   find(itemId: FindParams): Promise<any>;
 }
+
+export { IBaseRepository, IBaseRepositoryConstructor, FindParams };
