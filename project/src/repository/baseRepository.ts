@@ -7,7 +7,7 @@ class BaseRepository implements IBaseRepository {
     this.file = file;
   }
 
-  async find({ itemId }: { itemId: number }) {
+  async find({ itemId }: { itemId?: number }) {
     const fileRead = (await readFile(this.file)).toString();
     const content = JSON.parse(fileRead);
 
