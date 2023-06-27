@@ -3,6 +3,7 @@ import chalk from "chalk";
 import chalkTable from "chalk-table";
 
 import database from "../database.json" assert { type: "json" };
+import { Person } from "./models/Person.js";
 
 DraftLog(console).addLineListener(process.stdin);
 
@@ -17,5 +18,8 @@ const options = {
   ],
 };
 
-const table = chalkTable(options, database);
+const table = chalkTable(
+  options,
+  database.map((item) => new Person(item).formatted("pt-BR"))
+);
 const print = console.draft(table);
