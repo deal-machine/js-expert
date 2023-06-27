@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "vehicles": ["motorcycle", "car", "truck"],
+    "from": "2020-02-01",
+    "to": "2021-02-01",
+    "distance": 1000
+  }
+]

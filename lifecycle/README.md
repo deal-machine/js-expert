@@ -18,6 +18,7 @@
     callback -> callback -> callback - Pilha FILO
     Exceder a fila causa -> stack overflow
     Armazena dados tipo de valor primitivo
+
 </li>
 <li title="Memory Heap">
 
@@ -26,17 +27,8 @@
     Pilha de memória pra armazenar os dados de tipo de referência
     Pilha de memória -> armazena endereço de memória apontado pelo CallStack pra trabalhar valores diversos
     Armazena dados de tipo de referência
+
 </li>
-<!-- <li title="Tests">
-    End-to-end
-</li>
-<li title="Tests">
-    Coverage
-</li>
-<li title="Tests">
-    Project Renting a car (TDD & BDD) 
-    <ul>
-</ul> -->
 
 </li>
 </ul>

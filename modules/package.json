@@ -1,0 +1,25 @@
+{
+  "name": "jsexpert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "chalk-table": "^1.0.2",
+    "draftlog": "^1.0.13"
+  }
+}
