@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon --experimental-top-level-await src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",

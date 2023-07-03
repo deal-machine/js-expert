@@ -10,13 +10,17 @@ export class TerminalController {
     this.data = {};
   }
 
-  initializeTerminal(database, language) {
+  init(database, language) {
     DraftLog(console).addLineListener(process.stdin);
     this.terminal = readline.createInterface({
       input: process.stdin,
       output: process.stdout,
     });
     this.initializeTable(database, language);
+  }
+
+  close() {
+    this.terminal.close();
   }
 
   initializeTable(database, language) {
